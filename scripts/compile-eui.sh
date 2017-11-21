@@ -20,15 +20,6 @@ compile_lib() {
     src
   tput rc
   echo -e "${color_green}✔ Finished compiling src/ to lib/${color_reset}" >&2
-
-  # Also copy over SVGs. Babel has a --copy-files option but that brings over
-  # all kinds of things we don't want into the lib folder.
-  mkdir -p lib/components/icon/assets
-  for SVG in $(cd src && find components -name \*.svg); do
-    cp "src/$SVG" "lib/$SVG"
-  done
-
-  echo -e "${color_green}✔ Finished copying SVGs${color_reset}" >&2
 }
 
 compile_bundle() {
