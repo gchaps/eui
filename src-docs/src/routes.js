@@ -21,6 +21,12 @@ import { Slugify } from './services';
 import WritingGuidelines
   from './views/guidelines/writing';
 
+import ButtonGuidelines
+  from './views/guidelines/button';
+
+
+
+
 // Services
 
 import { IsColorDarkExample }
@@ -167,6 +173,9 @@ import TextScalingSandbox
 const guidelines = [{
   name: 'Writing',
   component: WritingGuidelines,
+}, {
+  name: 'Buttons',
+  component: ButtonGuidelines,
 }];
 
 const createExample = ({ title, intro, sections }) => {
