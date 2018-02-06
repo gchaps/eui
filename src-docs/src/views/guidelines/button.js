@@ -75,7 +75,7 @@ export default () => (
       </EuiLink>
     </EuiText>
 
-    <EuiSpacer size="xxl"/>
+    <EuiSpacer size="xxl" />
     <EuiText>
       <h2>Button types</h2>
     </EuiText>
@@ -121,7 +121,6 @@ export default () => (
 
     <EuiSpacer />
 
-
     <EuiFlexGroup wrap={true}>
       <EuiFlexItem style={{ maxWidth: 300 }}>
         <div>
@@ -143,7 +142,6 @@ export default () => (
     </EuiFlexGroup>
 
     <EuiSpacer />
-
 
     <EuiFlexGroup wrap={true}>
       <EuiFlexItem style={{ maxWidth: 300 }}>
@@ -169,24 +167,22 @@ export default () => (
       </EuiFlexItem>
     </EuiFlexGroup>
 
+    <EuiSpacer size="xxl" />
 
-
-
-
-
-
-    <EuiSpacer size="xxl"/>
     <EuiText>
       <h2>Placement and order</h2>
       <p>Button placement and order should follow the users path through the content.</p>
     </EuiText>
 
+    {/*
     <GuideRule
       heading="Modals"
       description="In modals, the user path is top to bottom, left to right, in a Z-shaped pattern.  Placing the primary action on the bottom right puts it right where users finish scanning."
     >
-
-      <GuideRuleExample  type="do" text="Do. The primary action is on the right with the secondary action on its left. Cancel is always an empty button.">
+      <GuideRuleExample
+        type="do"
+        text="Do. The primary action is on the right with the secondary action on its left. Cancel is always an empty button."
+      >
         <EuiModal style={{ width: '400px' }} onClose={() => {}}>
           <EuiModalHeader>
             <EuiModalHeaderTitle>
@@ -229,7 +225,10 @@ export default () => (
 
       </GuideRuleExample>
 
-      <GuideRuleExample type="do" text="Do. Confirmation modals are opinionated&mdash;button placement, order, and type are built-in so you don't have to worry about them.">
+      <GuideRuleExample
+        type="do"
+        text="Do. Confirmation modals are opinionated&mdash;button placement, order, and type are built-in so you don't have to worry about them."
+      >
         <EuiConfirmModal
           title="Delete this report?"
           confirmButtonText="Delete"
@@ -243,6 +242,7 @@ export default () => (
     </GuideRule>
 
     <EuiSpacer />
+    */}
 
     <GuideRule heading="Forms" description="In forms, content is typically concentrated on the top and left.  The user path is top to bottom, in an F-shaped pattern. A primary action on the bottom left is easiest for users to reach.">
       <GuideRuleExample type="do" text="Do. Because the users' eye never leaves the left side, put the primary action on the bottom left.  If present, a secondary action is on its right.">
@@ -266,9 +266,7 @@ export default () => (
           url="https://imgur.com/aiPlqks.jpg"
         />
       </GuideRuleExample>
-
     </GuideRule>
-
 
     <GuideRule heading="Elsewhere in the UI" description="Button placement in other containers should fit the content and context, while staying consistent with the application. ">
 
@@ -385,7 +383,7 @@ export default () => (
           <EuiIcon
             type="plusInCircle"
           />
-              &nbsp;Create
+          &nbsp;Create
         </EuiButton>&nbsp;&nbsp;&nbsp;
 
         <EuiButton >
@@ -462,7 +460,7 @@ export default () => (
           size="s"
           color="secondary"
         >
-        Save
+          Save
         </EuiButton>&nbsp;&nbsp;
         <EuiButton
           color="danger"
@@ -511,11 +509,11 @@ export default () => (
     <EuiTable>
       <EuiTableHeader>
         <EuiTableHeaderCell>
-        Label
+          Label
         </EuiTableHeaderCell>
 
         <EuiTableHeaderCell>
-        Description
+          Description
         </EuiTableHeaderCell>
       </EuiTableHeader>
 
@@ -528,7 +526,7 @@ export default () => (
           </EuiTableRowCell>
 
           <EuiTableRowCell>
-        Adds an object to a list or database.   Always followed by a noun, for example, Add visualization.  Do not use &quot;Add new.&quot; Remove is the correct opposite.
+            Adds an object to a list or database.   Always followed by a noun, for example, Add visualization.  Do not use &quot;Add new.&quot; Remove is the correct opposite.
           </EuiTableRowCell>
         </EuiTableRow>
 
@@ -539,7 +537,7 @@ export default () => (
             </EuiButtonEmpty>
           </EuiTableRowCell>
           <EuiTableRowCell>
-        Stops an action without saving pending changes.  Never make Cancel red&mdash;it's not a destructive action.
+            Stops an action without saving pending changes.  Never make Cancel red&mdash;it's not a destructive action.
           </EuiTableRowCell>
         </EuiTableRow>
 
