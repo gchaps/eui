@@ -26,25 +26,6 @@ import {
   EuiTableRowCell
 } from '../../../../src/components';
 
-import makeId from '../../../../src/components/form/form_row/make_id';
-
-const GuideRuleWriting = ({
-  children,
-  className,
-  ...rest,
-}) => {
-  const classes = classNames(className);
-
-  return (
-    <EuiText
-      className={classes}
-      {...rest}
-    >
-      <p>{children}</p>
-    </EuiText>
-  );
-};
-
 export default () => (
   <GuidePage title="Button">
     <EuiText>
